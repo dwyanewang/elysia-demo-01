@@ -3,13 +3,17 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build.ts",
+    "start": "bun out/index.js"
   },
   "dependencies": {
-    "elysia": "latest"
+    "elysia": "1.1.24",
+    "elysia-autoload": "^1.4.0"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "esbuild-plugin-autoload": "^0.2.1"
   },
   "module": "src/index.js"
 }
